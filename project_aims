@@ -1,0 +1,8 @@
+Python web app:
+
+# Aims:
+* make a character class, with the name and attributes, made by 4d6 discard lowest
+* give methods for each of the attributes to get modifiers
+* put this class into a web app
+* make options (and modify class) for race and class that will show changes to modifiers
+* allow for selection of race and class. 

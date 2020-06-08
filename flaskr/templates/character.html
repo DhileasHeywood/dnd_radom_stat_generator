@@ -1,0 +1,16 @@
+{% block content %}
+      <header>
+        <div>
+          <h1>{{ character["name"] }}</h1>
+      </header>
+
+      <ul>
+        <li>str: {{ character["str"][0] }} ( {{ character["str"][1] }} )</li>
+        <li>dex: {{ character["dex"][0] }} ( {{ character["dex"][1] }} )</li>
+        <li>con: {{ character["con"][0] }} ( {{ character["con"][1] }} )</li>
+        <li>int: {{ character["int"][0] }} ( {{ character["int"][1] }} )</li>
+        <li>wis: {{ character["wis"][0] }} ( {{ character["wis"][1] }} )</li>
+        <li>cha: {{ character["cha"][0] }} ( {{ character["cha"][1] }} )</li>
+      </ul>
+
+{% endblock %}
