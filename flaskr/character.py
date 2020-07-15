@@ -16,7 +16,14 @@ class Character:
 
         rolls = random.choices(d6, k = 4)
         rolls.sort
-        return sum(rolls[1:])
+
+        if rolls[0] == 1:
+            rolls[0] == random.choices(d6, k = 1)
+            rolls.sort
+            return sum(rolls[1:])
+
+        else:
+            return sum(rolls[1:])
 
     def mod(self, x):
         mod = x // 2
