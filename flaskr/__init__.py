@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, request, render_template, session, redirect, url_for
 
-from . import character
+from flaskr import character
 
 
 app = Flask(__name__)
@@ -35,3 +35,7 @@ def make_character():
     character_name = character.Character("{}".format(character_name))
 
     return render_template("character.html", character=character_name.for_template())
+
+
+if __name__ == '__main__':
+    app.run()
